@@ -1,0 +1,17 @@
+{
+    "name": "atollatom/database",
+    "license": "MIT",
+    "type": "library",
+    "minimum-stability": "stable",
+    "keywords": [],
+    "autoload": {
+        "psr-4": {
+            "AtollAtom\\Database\\": "src/"
+        }
+    },
+    "require": {
+        "ext-pdo": "*",
+        "php": ">=8.0",
+        "laravel/framework": "^9.0|^10.0"
+    }
+}
