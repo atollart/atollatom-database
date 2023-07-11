@@ -1,4 +1,4 @@
-# Laravel Database
+# AtollAtom Database
 
 Enable postgres connection with pgbouncer support.
 
