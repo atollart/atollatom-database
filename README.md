@@ -1,6 +1,6 @@
 # AtollAtom Database
 
-Enable postgres connection with pgbouncer support.
+Enable postgres connection with pgbouncer support
 
 ```php
 <?php
@@ -8,6 +8,7 @@ Enable postgres connection with pgbouncer support.
 namespace App\Providers;
 
 use AtollAtom\Database\Postgres\PostgresConnection;
+use Illuminate\Database\Connection;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,4 +20,12 @@ class AppServiceProvider extends ServiceProvider
         });
     }
 }
+```
+
+Database connection config
+
+```
+"options" => [
+    PDO::ATTR_EMULATE_PREPARES => true,
+],
 ```
