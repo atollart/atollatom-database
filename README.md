@@ -3,7 +3,12 @@
 Enable postgres connection with pgbouncer support.
 
 ```php
+<?php
+
+namespace App\Providers;
+
 use AtollAtom\Database\Postgres\PostgresConnection;
+use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
